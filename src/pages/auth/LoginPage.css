@@ -1,0 +1,290 @@
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+
+  background: #f5f7fb;
+
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 38px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   HOUSE LOGO
+========================= */
+
+.login-logo {
+  position: relative;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 18px;
+}
+
+/* Roof */
+
+.house-roof {
+  position: absolute;
+
+  top: 5px;
+  left: 7px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #2563eb;
+}
+
+/* House */
+
+.house-body {
+  position: absolute;
+
+  left: 15px;
+  top: 27px;
+
+  width: 34px;
+  height: 28px;
+
+  background: #2563eb;
+
+  border-radius: 3px;
+}
+
+/* Door */
+
+.house-door {
+  position: absolute;
+
+  bottom: 0;
+  left: 12px;
+
+  width: 10px;
+  height: 17px;
+
+  background: #ffffff;
+
+  border-radius: 2px 2px 0 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.login-header {
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+.login-header h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 26px;
+
+  font-weight: 700;
+}
+
+.login-header p {
+  margin: 7px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.error-text {
+  margin-bottom: 20px;
+
+  padding: 11px 13px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  color: #dc2626;
+
+  font-size: 13px;
+}
+
+/* =========================
+   FIELDS
+========================= */
+
+.login-field {
+  margin-bottom: 17px;
+}
+
+.login-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.login-field input {
+  width: 100%;
+
+  padding: 12px 13px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition: 0.2s;
+}
+
+.login-field input::placeholder {
+  color: #94a3b8;
+}
+
+.login-field input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot-password {
+  text-align: right;
+
+  margin-top: -5px;
+
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   CREATE ACCOUNT
+========================= */
+
+.create-account {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.create-account a {
+  color: #2563eb;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .login-page {
+    padding: 20px 12px;
+  }
+
+  .login-form {
+    padding: 28px 22px;
+
+    border-radius: 12px;
+  }
+}

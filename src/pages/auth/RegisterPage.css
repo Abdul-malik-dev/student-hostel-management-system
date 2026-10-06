@@ -1,0 +1,346 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  padding: 36px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.register-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.register-logo {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.register-header h1 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.register-header p {
+  margin: 8px auto 0;
+
+  max-width: 520px;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Error */
+
+.error-text {
+  margin-bottom: 22px;
+
+  padding: 11px 14px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  color: #dc2626;
+
+  font-size: 13px;
+}
+
+/* Sections */
+
+.form-section {
+  margin-bottom: 24px;
+}
+
+.form-section h3 {
+  margin: 0 0 16px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #0f172a;
+
+  font-size: 15px;
+}
+
+/* Rows */
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+/* Fields */
+
+.field {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #334155;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field label span {
+  color: #dc2626;
+}
+
+.field input {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition: 0.2s;
+}
+
+.field input::placeholder {
+  color: #94a3b8;
+}
+
+.field input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.field small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+/* Terms */
+
+.terms-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin: 4px 0 22px;
+
+  color: #475569;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.terms-row input {
+  width: 16px;
+  height: 16px;
+
+  margin-top: 2px;
+
+  cursor: pointer;
+}
+
+.terms-row a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.terms-row a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+
+.register-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.register-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Login */
+
+.login-link {
+  margin: 18px 0 0;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.login-link a {
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .register-page {
+    padding: 20px 12px;
+  }
+
+  .register-form {
+    padding: 24px 20px;
+
+    border-radius: 12px;
+  }
+
+  .row {
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .register-header h1 {
+    font-size: 21px;
+  }
+}
+
+/* International Phone Input */
+
+.PhoneInput {
+  width: 100%;
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d6dbe1;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  transition: 0.2s ease;
+}
+
+.PhoneInput:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.PhoneInputCountry {
+  min-height: 48px;
+
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+
+  border-right: 1px solid #e5e7eb;
+
+  background: #f8fafc;
+}
+
+.PhoneInputCountrySelect {
+  cursor: pointer;
+}
+
+.PhoneInputInput {
+  flex: 1;
+
+  width: 100%;
+  min-height: 46px;
+
+  border: none;
+  outline: none;
+
+  padding: 0 12px;
+
+  font-size: 14px;
+  color: #1e293b;
+
+  background: transparent;
+}
+
+.PhoneInputInput::placeholder {
+  color: #94a3b8;
+}

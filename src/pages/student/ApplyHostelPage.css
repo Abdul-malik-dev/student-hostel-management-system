@@ -1,0 +1,504 @@
+/* =========================================
+   APPLY PAGE
+========================================= */
+
+.apply-page {
+  min-height: 100vh;
+
+  background: #f5f7fb;
+
+  padding: 35px 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.apply-container {
+  width: 100%;
+  max-width: 720px;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.back-link:hover {
+  color: #1d4ed8;
+  transform: translateX(-2px);
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.apply-form {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.form-header {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  margin-bottom: 25px;
+}
+
+
+.form-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dbeafe;
+
+  border-radius: 10px;
+
+  font-size: 23px;
+}
+
+
+.form-header h1 {
+  margin: 0 0 7px;
+
+  color: #0f172a;
+
+  font-size: 25px;
+}
+
+
+.form-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-text {
+  padding: 12px 15px;
+
+  margin-bottom: 22px;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  color: #dc2626;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   FORM SECTION
+========================================= */
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+
+.form-section h3 {
+  margin: 0 0 5px;
+
+  color: #1e293b;
+
+  font-size: 18px;
+}
+
+
+.section-description {
+  margin: 0 0 22px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 8px;
+
+  color: #334155;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.required {
+  color: #ef4444;
+}
+
+
+.optional {
+  margin-left: auto;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  font-weight: normal;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.apply-form select,
+.apply-form textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  color: #1e293b;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+
+.apply-form select {
+  cursor: pointer;
+}
+
+
+.apply-form textarea {
+  resize: vertical;
+
+  min-height: 100px;
+}
+
+
+.apply-form select:focus,
+.apply-form textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+.apply-form select:hover,
+.apply-form textarea:hover {
+  border-color: #94a3b8;
+}
+
+
+.apply-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   AGREEMENT
+========================================= */
+
+.agreement-box {
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 9px;
+
+  margin-bottom: 20px;
+}
+
+
+.checkbox-row {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  cursor: pointer;
+}
+
+
+.checkbox-row input {
+  width: 17px;
+  height: 17px;
+
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  accent-color: #2563eb;
+
+  cursor: pointer;
+}
+
+
+.checkbox-row a {
+  color: #2563eb;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.checkbox-row a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.submit-btn {
+  width: 100%;
+
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+.submit-btn:hover {
+  background: #1d4ed8;
+
+  box-shadow:
+    0 4px 12px rgba(37, 99, 235, 0.25);
+
+  transform: translateY(-1px);
+}
+
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   SUCCESS PAGE
+========================================= */
+
+.success-box {
+  width: 100%;
+  max-width: 520px;
+
+  align-self: center;
+
+  background: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 14px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.08);
+
+  text-align: center;
+}
+
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dcfce7;
+
+  color: #16a34a;
+
+  border-radius: 50%;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.success-box h2 {
+  margin: 0 0 12px;
+
+  color: #0f172a;
+
+  font-size: 24px;
+}
+
+
+.success-box p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+.back-link-btn {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 11px 20px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+
+.back-link-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .apply-page {
+    padding: 20px 15px;
+  }
+
+  .apply-form {
+    padding: 22px 18px;
+  }
+
+  .form-header h1 {
+    font-size: 21px;
+  }
+
+  .form-header p {
+    font-size: 13px;
+  }
+
+  .success-box {
+    padding: 30px 20px;
+  }
+
+}
